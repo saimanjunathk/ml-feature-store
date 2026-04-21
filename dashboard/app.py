@@ -164,12 +164,12 @@ with tab2:
         # Select relevant columns
         display_cols = [
             c for c in [
-                "tags.mlflow.runName",
-                "params.model_type",
-                "metrics.accuracy",
-                "metrics.auc",
-                "metrics.f1_score",
-                "start_time"
+                "run_id",
+                "model_type",
+                "accuracy",
+                "auc",
+                "f1_score",
+                "time_stamp"
             ] if c in runs_df.columns
         ]
         st.dataframe(
